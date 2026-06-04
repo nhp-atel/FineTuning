@@ -12,25 +12,37 @@ free Google Colab session.
 
 ## 📚 Learning order
 
-Work through the notebooks **in order** — each one builds on the previous.
+Work through the notebooks **in order** — each one builds on the previous. They
+are grouped into seven topic-phase folders, but the numeric prefixes (`01`–`15`)
+always tell you the global order.
 
 | #  | Notebook | What you learn |
 |----|----------|----------------|
-| 01 | `01_python_refresher.ipynb` | The exact Python you need for ML: lists, dicts, comprehensions, NumPy, functions, classes |
-| 02 | `02_ml_fundamentals.ipynb` | What "learning from data" means: features, labels, train/test, overfitting, loss, metrics |
-| 03 | `03_neural_network_basics.ipynb` | Neurons, layers, activations, forward pass, gradients, and backpropagation — intuitively |
-| 04 | `04_pytorch_fundamentals.ipynb` | Tensors, autograd, `nn.Module`, optimizers — the building blocks of all training |
-| 05 | `05_training_loop_from_scratch.ipynb` | Write a full training loop yourself so you understand what frameworks hide |
-| 06 | `06_transformers_and_attention.ipynb` | Self-attention and the Transformer block, explained without heavy math |
-| 07 | `07_tokenization_and_embeddings.ipynb` | How text becomes numbers: tokenizers, token IDs, and embeddings |
-| 08 | `08_huggingface_transformers_basics.ipynb` | Load models/tokenizers, run inference, use pipelines, the `Trainer` API |
-| 09 | `09_dataset_preparation.ipynb` | Build clean datasets, JSONL format, train/validation split, the lead dataset |
-| 10 | `10_instruction_finetuning_format.ipynb` | Prompt templates, instruction/response format, supervised fine-tuning (SFT) |
-| 11 | `11_lora_finetuning.ipynb` | LoRA vs full fine-tuning, adapters, PEFT, and a real LoRA run |
-| 12 | `12_qlora_finetuning.ipynb` | Quantization (4-bit), QLoRA, and fitting bigger models on small GPUs |
-| 13 | `13_evaluation.ipynb` | Accuracy, precision, recall, F1, confusion matrix, and manual review |
-| 14 | `14_inference_and_serving.ipynb` | Generate text, merge adapters, save/load, and serve a model behind an API |
-| 15 | `15_mini_project_lead_intent.ipynb` | **Capstone:** fine-tune a small model to classify lead intent, end to end |
+| **`01-foundations/`** | | **Phase 1 — Foundations** |
+| 01 | `01-foundations/01_python_refresher.ipynb` | The exact Python you need for ML: lists, dicts, comprehensions, NumPy, functions, classes |
+| 02 | `01-foundations/02_ml_fundamentals.ipynb` | What "learning from data" means: features, labels, train/test, overfitting, loss, metrics |
+| 03 | `01-foundations/03_neural_network_basics.ipynb` | Neurons, layers, activations, forward pass, gradients, and backpropagation — intuitively |
+| **`02-pytorch/`** | | **Phase 2 — PyTorch** |
+| 04 | `02-pytorch/04_pytorch_fundamentals.ipynb` | Tensors, autograd, `nn.Module`, optimizers — the building blocks of all training |
+| 05 | `02-pytorch/05_training_loop_from_scratch.ipynb` | Write a full training loop yourself so you understand what frameworks hide |
+| **`03-transformers/`** | | **Phase 3 — Transformers & Hugging Face** |
+| 06 | `03-transformers/06_transformers_and_attention.ipynb` | Self-attention and the Transformer block, explained without heavy math |
+| 07 | `03-transformers/07_tokenization_and_embeddings.ipynb` | How text becomes numbers: tokenizers, token IDs, and embeddings |
+| 08 | `03-transformers/08_huggingface_transformers_basics.ipynb` | Load models/tokenizers, run inference, use pipelines, the `Trainer` API |
+| **`04-data-prep/`** | | **Phase 4 — Data preparation** |
+| 09 | `04-data-prep/09_dataset_preparation.ipynb` | Build clean datasets, JSONL format, train/validation split, the lead dataset |
+| 10 | `04-data-prep/10_instruction_finetuning_format.ipynb` | Prompt templates, instruction/response format, supervised fine-tuning (SFT) |
+| **`05-finetuning/`** | | **Phase 5 — Fine-tuning** |
+| 11 | `05-finetuning/11_lora_finetuning.ipynb` | LoRA vs full fine-tuning, adapters, PEFT, and a real LoRA run |
+| 12 | `05-finetuning/12_qlora_finetuning.ipynb` | Quantization (4-bit), QLoRA, and fitting bigger models on small GPUs |
+| **`06-eval-serving/`** | | **Phase 6 — Evaluation & serving** |
+| 13 | `06-eval-serving/13_evaluation.ipynb` | Accuracy, precision, recall, F1, confusion matrix, and manual review |
+| 14 | `06-eval-serving/14_inference_and_serving.ipynb` | Generate text, merge adapters, save/load, and serve a model behind an API |
+| **`07-capstone/`** | | **Phase 7 — Capstone** |
+| 15 | `07-capstone/15_mini_project_lead_intent.ipynb` | **Capstone:** fine-tune a small model to classify lead intent, end to end |
+
+> 💡 Each notebook's "What to learn next" points to the next notebook by name —
+> just look for that filename in the next folder.
 
 ---
 
@@ -94,7 +106,7 @@ notebook shows you exactly where to do this.
 
 ## 🎯 Final project overview
 
-The capstone (`15_mini_project_lead_intent.ipynb`) ties everything together by
+The capstone (`07-capstone/15_mini_project_lead_intent.ipynb`) ties everything together by
 fine-tuning a small model to predict **lead intent** for a sales/marketing use
 case. Each lead is described by simple fields:
 
