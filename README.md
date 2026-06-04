@@ -42,7 +42,8 @@ always tell you the global order.
 | 15 | `07-capstone/15_mini_project_lead_intent.ipynb` | **Capstone:** fine-tune a small model to classify lead intent, end to end |
 
 > 💡 Each notebook's "What to learn next" points to the next notebook by name —
-> just look for that filename in the next folder.
+> just look for that filename in the next folder. **Every folder also has its own
+> `README.md`** describing that phase, its notebooks, and its GPU/CPU needs.
 
 ---
 
